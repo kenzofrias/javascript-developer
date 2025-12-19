@@ -18,12 +18,67 @@
     flex-direction: column;
 
     border-radius: 1rem;
-    background-color: var(--cor001);
     color: var(--corTexto01);
+}
+
+.normal{
+    background-color: var(--normal);
+}
+.grass{
+    background-color: var(--grass);
+}
+.fire{
+    background-color: var(--fire);
+}
+.water{
+    background-color: var(--water);
+}
+.electric{
+    background-color: var(--electric);
+}
+.ice{
+    background-color: var(--ice);
+}
+.ground{
+    background-color: var(--ground);
+}
+.flying{
+    background-color: var(--flying);
+}
+.poison{
+    background-color: var(--poison);
+}
+.fighting{
+    background-color: var(--fighting);
+}
+.psychic{
+    background-color: var(--psychic);
+}
+.dark{
+    background-color: var(--dark);
+}
+.rock{
+    background-color: var(--rock);
+}
+.bug{
+    background-color: var(--bug);
+}
+.ghost{
+    background-color: var(--ghost);
+}
+.dragon{
+    background-color: var(--dragon);
+}
+.steel{
+    background-color: var(--steel);
+}
+.fairy{
+    background-color: var(--fairy);
 }
 
 .pokemon .name{
     color: var(--corTexto01);
+    text-transform: capitalize;
 }
 
 .pokemon .detail{
@@ -46,15 +101,17 @@
 }
 
 .pokemon .detail .types .type{
-    background-color: var(--cor002);
     color: var(--corTexto01);
 
     padding: .25rem .5rem;
     margin: .25rem 0;
 
     font-size: .625rem;
+    text-align: center;
 
     border-radius: 1.2rem;
+
+    filter: brightness(1.12);
 }
 
 .pokemon .number{
