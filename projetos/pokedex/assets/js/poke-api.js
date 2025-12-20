@@ -4,7 +4,7 @@ const pokeAPI = {}
 
 function convertPokeApiDetailToPokemon(pokeDetail){
     const pokemon = new Pokemon()
-
+    //detalhes listagem
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
     
@@ -16,6 +16,9 @@ function convertPokeApiDetailToPokemon(pokeDetail){
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
     return pokemon
+
+    //detalhes pokemon
+    
 }
 
 pokeAPI.getPokemonDetail = (pokemon) => {

@@ -6,7 +6,6 @@ const limit = 10;
 let offset = 0;
 
 
-
 function loadPokemonItens(offset, limit){
     pokeAPI.getPokemons(offset, limit).then((pokemons = []) => {
         const newHtml  = pokemons.map((pokemon) => `
