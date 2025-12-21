@@ -151,14 +151,14 @@
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.7);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 100;
 }
 
 .modal-content {
-    width: 90%;
+    width: 87%;
     max-width: 350px;
     border-radius: 20px;
     position: relative;
@@ -220,7 +220,7 @@
     padding: .1rem .5rem;
     margin-right: .2rem;
 
-    font-size: .6rem;
+    font-size: .75rem;
     text-align: center;
 
     border-radius: 1.2rem;
@@ -233,6 +233,11 @@
     width: 150px;
     height: 150px;
 }
+.abilities{
+    text-transform: capitalize;
+    text-align: right;
+    width: 60%;
+}
 
 @keyframes slideIn {
     from { transform: translateY(50px); opacity: 0; }
@@ -244,6 +249,8 @@
     align-items: center;
     justify-content: center;
 
+    width: 24px;
+    height: 24px;
 
     position: absolute;
     top: 15px;
@@ -253,8 +260,6 @@
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-
-    filter: brightness(1.12);
 }
 .close-btn .material-symbols-outlined{
     color: var(--corTexto01);

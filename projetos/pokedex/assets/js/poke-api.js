@@ -15,10 +15,14 @@ function convertPokeApiDetailToPokemon(pokeDetail){
     pokemon.type = type
 
     pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
-    return pokemon
 
     //detalhes pokemon
-    
+    pokemon.height = pokeDetail.height
+    pokemon.weight = pokeDetail.weight
+    pokemon.abilities = pokeDetail.abilities
+    pokemon.url = `https://pokeapi.co/api/v2/pokemon/${pokeDetail.id}`
+
+    return pokemon
 }
 
 pokeAPI.getPokemonDetail = (pokemon) => {

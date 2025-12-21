@@ -7,5 +7,8 @@ class Pokemon {
     photo;
 
     //detalhes pokemon
-    
+    height;
+    weight;
+    abilities = [];
+    url;
 }
