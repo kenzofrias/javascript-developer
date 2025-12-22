@@ -1,0 +1,20 @@
+
+// const pessoa = {
+//     genero: 'Masculino'
+// }
+
+// const renan = {
+//     name: 'Renan',
+//     idade: 25,
+//     __proto__ : pessoa
+// }
+
+// console.log(renan.genero)
+
+function Pessoa(nome, idade){
+    this.nome = nome
+    this.idade = idade
+}
+
+const renan = new Pessoa('Renan', 25)
+console.log(renan)
