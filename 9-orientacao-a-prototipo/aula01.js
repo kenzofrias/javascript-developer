@@ -18,3 +18,20 @@ function Pessoa(nome, idade){
 
 const renan = new Pessoa('Renan', 25)
 console.log(renan)
+
+/*
+MESMO QUE:
+    class Exemplo {
+        nome;
+        idade;
+
+        constructor(nome, idade){
+            this.nome = nome;
+            this.idade = idade;
+        }
+
+        falar(){
+            console.log('Olá, meu nome é ' + this.nome)
+        }
+    }
+*/
