@@ -1,4 +1,4 @@
-let nomes = ['Ana', 'Bia', 'Carlos', 'Daniel'];
+let nomes = ['Ana', 'Bia', 'Carlos', 'Daniel', 'Fabio', 'Juliana', 'Ricardo'];
 
 console.log(nomes);
 
@@ -14,8 +14,8 @@ console.log(nomes);
 nomes.shift(); //removendo o primeiro valor do array
 console.log(nomes);
 
-nomes.splice(1,1); //removendo o valor do índice 1
-console.log(nomes);
+nomes.splice(-1,1); //removendo o valor do índice -1 (último valor)
+console.log('Splice: ' + nomes);
 
 console.log(nomes.length); //mostrando o tamanho do array
 
