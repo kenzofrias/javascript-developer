@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* IMPORTAÇÕES */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('../fonts/neue-machina/NeueMachina-Regular.otf');
+}
+
+:root{
+    --font01: "Open Sans";
+    --font02: "Neue Machina";
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--font01), Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #000000;
+    background-image:  linear-gradient(to top left, transparent, #000000 40% 60%, transparent), radial-gradient(circle at 0% 35%, #DB72C2 0% 10%, #C158DB, #C516DB, #9658DB, #5830DB, #3040DB, #586FDB, #5889DC, #6B58DB, #DB3D6A);
+    background-repeat: no-repeat;
+    color: #ffffff;
+}
+
+.main{
+    margin: .8rem;
+    padding: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+}
