@@ -4,12 +4,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+}
+
+.header .fa-ellipsis{
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    font-size: 2rem;
 }
 
 .header .photo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    margin-top: 1rem;
 }
 
 .header .title{
@@ -34,4 +43,24 @@
 
 .header .information li i{
     margin-right: .5rem;
+}
+
+@media screen and (min-width: 768px){
+
+    .header{
+        display: grid;
+        grid-template-areas: "photo title" "photo information";
+    }
+    .header .photo{
+        grid-area: photo;
+        margin: 0 auto;
+    }
+    .header .title{
+        grid-area: title;
+        text-align: left;
+        max-width: 200px;
+    }
+    .header .information{
+        grid-area: information;
+    }
 }
