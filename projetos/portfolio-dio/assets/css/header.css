@@ -7,18 +7,23 @@
     position: relative;
 }
 
-.header .fa-ellipsis{
+/* .header .fa-ellipsis{
     position: absolute;
     top: 0rem;
     right: 0rem;
     font-size: 2rem;
+} */
+.header .fa-ellipsis{
+    width: 100%;
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 .1rem;
 }
 
 .header .photo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 1rem;
 }
 
 .header .title{
@@ -43,13 +48,17 @@
 
 .header .information li i{
     margin-right: .5rem;
+    color: #6b58db;
 }
 
 @media screen and (min-width: 768px){
 
     .header{
         display: grid;
-        grid-template-areas: "photo title" "photo information";
+        grid-template-areas: 
+        "photo fa-ellipsis"
+        "photo title" 
+        "photo information";
     }
     .header .photo{
         grid-area: photo;
@@ -59,8 +68,12 @@
         grid-area: title;
         text-align: left;
         max-width: 200px;
+        margin-top: 0;
     }
     .header .information{
         grid-area: information;
+    }
+    .header .fa-ellipsis{
+        grid-area: fa-ellipsis;
     }
 }
