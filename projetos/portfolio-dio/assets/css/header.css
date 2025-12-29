@@ -1,37 +1,36 @@
 @charset "UTF-8";
-
-.header{
+header{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-/* .header .fa-ellipsis{
+/* header .fa-ellipsis{
     position: absolute;
     top: 0rem;
     right: 0rem;
     font-size: 2rem;
 } */
-.header .fa-ellipsis{
+
+header .fa-ellipsis{
     width: 100%;
     text-align: right;
     font-size: 2rem;
     padding: 0 .1rem;
 }
-
-.header .photo{
+header .photo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-.header .title{
+header .title{
     text-align: center;
     font-family: var(--font02);
 }
 
-.header .information{
+header .information{
     list-style: none;
 
     display: flex;
@@ -41,39 +40,39 @@
     width: 100%;
 }
 
-.header .information li{
+header .information li{
     margin: .5rem;
     font-size: 1.125rem;
 }
 
-.header .information li i{
+header .information li i{
     margin-right: .5rem;
     color: #6b58db;
 }
 
 @media screen and (min-width: 768px){
 
-    .header{
+    header{
         display: grid;
         grid-template-areas: 
         "photo fa-ellipsis"
         "photo title" 
         "photo information";
     }
-    .header .photo{
+    header .photo{
         grid-area: photo;
         margin: 0 auto;
     }
-    .header .title{
+    header .title{
         grid-area: title;
         text-align: left;
         max-width: 200px;
         margin-top: 0;
     }
-    .header .information{
+    header .information{
         grid-area: information;
     }
-    .header .fa-ellipsis{
+    header .fa-ellipsis{
         grid-area: fa-ellipsis;
     }
 }
