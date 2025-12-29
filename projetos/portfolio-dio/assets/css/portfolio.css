@@ -12,14 +12,23 @@
 
 .portfolio li{
     margin: 1rem 0;
-    font-weight: 700;
 }
 
+.portfolio li i, .title{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* link do projeto */
 .portfolio li p{
-    margin-top: 1rem;
+    margin-top: .5rem;
+    font-size: 1rem;
 }
 .portfolio li p a{
     color: white;
-    font-weight: 300;
+    font-weight: 350;
     text-decoration: none;
+}
+.portfolio li p a:hover{
+    text-decoration: underline;
 }
