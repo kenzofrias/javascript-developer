@@ -28,7 +28,7 @@ header .photo{
 header .title{
     text-align: center;
     font-family: var(--font02);
-    font-size: 1.25rem;
+    font-size: 2rem;
 }
 
 header .information{
