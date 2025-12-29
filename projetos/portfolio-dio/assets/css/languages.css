@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.languages{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.languages li{
+    padding: .5rem 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.languages li i{
+    font-size: .85rem;
+}

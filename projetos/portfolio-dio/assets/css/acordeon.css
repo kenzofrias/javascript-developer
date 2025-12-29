@@ -50,13 +50,9 @@
     transition: opacity .25s ease-in-out;
 }
 
-.acordeon .content ul{
-    padding: 0 1rem;
-    margin: 0 1.5rem 1rem 1.5rem;
-}
-
 .acordeon.open .content{
     display: block;
     height: auto;
     opacity: 1;
+    padding: 0 2rem 1.5rem 2rem;
 }
