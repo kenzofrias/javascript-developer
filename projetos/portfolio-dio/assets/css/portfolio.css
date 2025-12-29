@@ -9,3 +9,10 @@
     padding: 0;
     list-style: none;
 }
+
+.portfolio li{
+    margin: 1rem 0;
+}
+.portfolio li p{
+    margin-top: .25rem;
+}
