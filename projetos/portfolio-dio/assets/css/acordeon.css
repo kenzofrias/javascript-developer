@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+:root{
+    --bg-ac-01: #55569e;
+}
+
+.acordeon{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    transition: .25s;
+}
+
+.acordeon.open,.acordeon:hover{
+    background-color: var(--bg-ac-01);
+    border-color: var(--bg-ac-01);
+}
+
+.acordeon .trigger{    
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    background-color: transparent;
+    color: var(--color-text);
+    border: none;
+    cursor: pointer;
+}
+
+.acordeon .trigger .fa-chevron-down{
+    font-size: 1.5rem;
+    transition: .25s;
+}
+
+.acordeon.open .fa-chevron-down{
+    transform: rotate(-180deg);
+}
+
+.acordeon .content{
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+}
+
+.acordeon .content ul{
+    padding: 0 1rem;
+    margin: 0 1.5rem 1rem 1.5rem;
+}
+
+.acordeon.open .content{
+    display: block;
+    height: auto;
+    opacity: 1;
+}
