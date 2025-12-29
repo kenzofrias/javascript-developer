@@ -28,7 +28,8 @@ header .photo{
 header .title{
     text-align: center;
     font-family: var(--font02);
-    font-size: 2rem;
+    font-size: 1.8rem;
+    transition: font-size .25s;
 }
 
 header .information{
@@ -69,6 +70,7 @@ header .information li i{
         text-align: left;
         max-width: 200px;
         margin-top: 0;
+        font-size: 2rem;
     }
     header .information{
         grid-area: information;
