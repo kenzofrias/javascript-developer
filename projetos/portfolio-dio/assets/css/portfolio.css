@@ -12,7 +12,14 @@
 
 .portfolio li{
     margin: 1rem 0;
+    font-weight: 700;
 }
+
 .portfolio li p{
-    margin-top: .25rem;
+    margin-top: 1rem;
+}
+.portfolio li p a{
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
 }
