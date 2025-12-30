@@ -34,6 +34,10 @@
     cursor: pointer;
 }
 
+.acordeon .trigger h4{
+    text-align: start;
+}
+
 .acordeon .trigger .fa-chevron-down{
     font-size: 1.5rem;
     transition: .25s;

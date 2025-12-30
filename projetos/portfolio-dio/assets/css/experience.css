@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.experience {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.experience li{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience .period{
+    margin: .5rem 0;
+}
+
+.experience .period i{
+    text-align: left;
+}
