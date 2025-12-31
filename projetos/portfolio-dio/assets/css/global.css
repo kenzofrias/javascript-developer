@@ -20,7 +20,7 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #000000;
     background-image:  linear-gradient(to top left, transparent, #000000 40% 60%, transparent), radial-gradient(circle at 0% 35%, #DB72C2 0% 10%, #C158DB, #C516DB, #9658DB, #5830DB, #3040DB, #586FDB, #5889DC, #6B58DB, #DB3D6A);
     background-repeat: no-repeat;
