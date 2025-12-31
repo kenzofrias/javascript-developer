@@ -21,9 +21,10 @@
     padding: 0;
 }
 
-.tools ul li{
-    font-size: 3rem;
-    margin: .5rem 0;
+.tools ul li img{
+    margin: .5rem;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .skills-container .personal ul{
@@ -40,6 +41,7 @@
     margin-left: 2rem;
     padding: .5rem;
 }
+
 
 @media screen and (min-width: 768px) {
     .skills-container{
